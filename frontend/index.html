@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestion des Contacts</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container"> 
+    <h1>Gestion des Contacts</h1>
+    <!-- Formulaire -->
+    <form id="contact-form">
+      <input type="text" id="nom" placeholder="Nom" required />
+      <input type="text" id="categorie" placeholder="Catégorie" required />
+      <input type="text" id="telephone" placeholder="Téléphone" required />
+      <input type="text" id="service" placeholder="service" required>
+      <button type="submit">Enregistrer</button>
+    </form>
+    <hr />
+    <!-- List -->
+   <table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Email</th>
+            <th>Téléphone</th>
+            <th>Service</th>
+        </tr>
+    </thead>
+    <tbody id="contact-table"></tbody>
+</table>
+</div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

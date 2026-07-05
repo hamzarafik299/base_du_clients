@@ -1,0 +1,147 @@
+/* ===== Général ===== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    margin: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* ===== Tableau ===== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+thead {
+    background: #4f46e5;
+    color: white;
+}
+
+thead th {
+    padding: 16px;
+    text-align: left;
+    font-size: 15px;
+}
+
+tbody td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: #f3f4f6;
+    transition: .3s;
+}
+
+/* ===== Boutons ===== */
+
+.edit-btn,
+.delete-btn {
+    border: none;
+    padding: 8px 14px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.edit-btn {
+    background: #2563eb;
+    margin-right: 8px;
+}
+
+.edit-btn:hover {
+    background: #1d4ed8;
+}
+
+.delete-btn {
+    background: #dc2626;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+}
+/* ===== Formulaire ===== */
+
+#contact-form {
+    width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* ===== Inputs ===== */
+
+#contact-form input {
+    padding: 14px 18px;
+    font-size: 16px;
+
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+
+    outline: none;
+
+    transition: .3s;
+}
+
+/* Placeholder */
+
+#contact-form input::placeholder {
+    color: #9ca3af;
+}
+
+/* Focus */
+
+#contact-form input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 10px rgba(79,70,229,.2);
+}
+
+/* Bouton */
+
+#contact-form button {
+    padding: 14px;
+    border: none;
+
+    background: #4f46e5;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+#contact-form button:hover {
+    background: #4338ca;
+    transform: translateY(-2px);
+}
+
+#contact-form button:active {
+    transform: scale(.98);
+}

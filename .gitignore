@@ -1,0 +1,16 @@
+# Python
+backend/venv/
+__pycache__/
+*.pyc
+
+# Database
+backend/contacts.db
+
+# VS Code
+.vscode/
+
+# Environment
+.env
+
+# Node (si plus tard tu utilises React)
+node_modules/
